@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from app.forms import ProductForm
 from app.models import Produtos
 from django.core.paginator import Paginator
+
+
 def home(request):
     data = {}
     search = request.GET.get('search')
